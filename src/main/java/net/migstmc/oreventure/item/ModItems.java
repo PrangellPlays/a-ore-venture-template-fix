@@ -1,5 +1,7 @@
 package net.migstmc.oreventure.item;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.migstmc.oreventure.AOreVenture;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -8,8 +10,13 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
+    public static final Item RUBY = (registerItem("ruby", new Item(new FabricItemSettings()));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(AOreVenture.MOD_ID, name), item);
+    }
+
+    private static void addItemstoIngredientTabItemGroup(FabricItemGroupEntries entries) {
+        entries.add(RUBY);
     }
     public static void registerModItems() {
         AOreVenture.LOGGER.info("Register Mod Items for" + AOreVenture.MOD_ID);
