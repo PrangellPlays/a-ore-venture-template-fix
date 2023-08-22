@@ -12,21 +12,21 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/a-ore-venture/icon.png",
+	"icon": "assets/aoreventure/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "net.migstmc.oreventure.AOreVenture"
+          "net.migstmc.aoreventure.AOreVenture"
 		],
 		"client": [
-			"net.migstmc.oreventure.AOreVentureClient"
+			"net.migstmc.aoreventure.AOreVentureClient"
 		],
 		"fabric-datagen": [
-			"net.migstmc.oreventure.AOreVentureDataGenerator"
+			"net.migstmc.aoreventure.AOreVentureDataGenerator"
 		]
 	},
 	"mixins": [
-		"a-ore-venture.mixins.json"
+      "aoreventure.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.18",
